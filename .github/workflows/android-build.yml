@@ -28,9 +28,15 @@ jobs:
       - name: Build APK
         run: chmod +x gradlew && ./gradlew assembleDebug
 
+      - name: Locate APK
+        run: |
+          echo "APK files:"
+          find app/build/outputs -type f -name "*.apk" -print
+          test -n "$(find app/build/outputs -type f -name "*.apk" -print -quit)"
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: VPNGate-APK
-          path: app/build/outputs/apk/debug/*.apk
+          path: app/build/outputs/**/*.apk
           if-no-files-found: error
