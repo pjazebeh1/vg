@@ -34,7 +34,7 @@ object VpnGateUrls {
     const MAX_MIRRORS = 12
 
     const val HTML_PATH = "/en/"
-    const API_PATH = "/api/iphone/"
+    const val API_PATH = "/api/iphone/"
     const DIRECTORY_PATH = "/en/sites.aspx"
 
     val BOOTSTRAP_MIRRORS = listOf(
