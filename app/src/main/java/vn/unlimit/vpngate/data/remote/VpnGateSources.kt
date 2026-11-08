@@ -31,11 +31,11 @@ object VpnGateUrls {
     )
 
     const val MIRRORS_URL = "https://www.vpngate.net/en/sites.aspx"
-    const MAX_MIRRORS = 12
+    const val MAX_MIRRORS = 12
 
     const val HTML_PATH = "/en/"
     const val API_PATH = "/api/iphone/"
-    const DIRECTORY_PATH = "/en/sites.aspx"
+    const val DIRECTORY_PATH = "/en/sites.aspx"
 
     val BOOTSTRAP_MIRRORS = listOf(
         "http://150.40.105.19:35399",
